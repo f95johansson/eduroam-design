@@ -37,6 +37,11 @@ h3 {
   font-size: 2.1rem;
 }
 
+a {
+  text-decoration: none;
+  color: $link-blue;
+}
+
 /**
  * Layout
  */
@@ -106,9 +111,12 @@ h3 {
   }
   
   .options {
+    margin-top: 2rem;
+    
     li {
-      display: inline;
-      color: $link-blue;
+      padding: 0 2rem;
+      display: inline-block;
+      font-size: 2.1rem;
     }
   }
 }

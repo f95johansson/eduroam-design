@@ -25,12 +25,15 @@
   
   <div class="options">
     <ul>
-      <li>Mac OS</li>
-      <li>Windows</li>
-      <li>Linux</li>
-      <li>Android</li>
-      <li>iOS</li>
-      <li>Manuell</li>
+      {% for link in site.data.nav %}
+        <li>
+        {% if link.url == page.url %}
+          {{ link.title }}
+        {% else %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endif %}
+        </li>
+      {% endfor %}
     </ul>
   </div>
 </div>
