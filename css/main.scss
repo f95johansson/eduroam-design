@@ -74,11 +74,12 @@ h1 {
     border: 0.1rem $black solid;
     border-radius: 0;
     height: 4rem;
+    background-image: url("/images/spinner.svg");
+    background-repeat: no-repeat;
     
     
     &:after {
       content: " ";
-      background-image: "/images/spinner.svg";
       position: absolute;
     }
   }
