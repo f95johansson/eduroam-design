@@ -107,8 +107,12 @@ h3 {
   
   .options {
     li {
+    	margin-top: 1rem;
       display: inline;
-      color: $link-blue;
+      color: $black;
+    	a {
+    	  color: $link-blue;
+    	}
     }
   }
 }
