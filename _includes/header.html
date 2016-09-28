@@ -1,10 +1,10 @@
 <div class="top-bar">
-    <img src="/images/deer.svg" alt="Ren ikon">
+    <img src="./images/deer.svg" alt="Ren ikon">
     <a href="www.umu.se">Gå till www.umu.se</a>
 </div>
 
 <div class="umu-logo">
-  <img src="/images/umu-logo.svg" alt="UmU logo">
+  <img src="./images/umu-logo.svg" alt="UmU logo">
 </div>
 
 <h1 id="main-title">Installera Eduroam</h1>
@@ -25,12 +25,15 @@
   
   <div class="options">
     <ul>
-      <li>Mac OS</li>
-      <li>Windows</li>
-      <li>Linux</li>
-      <li>Android</li>
-      <li>iOS</li>
-      <li>Manuell</li>
+      {% for link in site.data.nav %}
+        <li>
+        {% if link.url == page.url %}
+          {{ link.title }}
+        {% else %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endif %}
+        </li>
+      {% endfor %}
     </ul>
   </div>
 </div>
