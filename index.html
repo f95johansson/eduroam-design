@@ -1,23 +1,21 @@
 ---
 layout: default
 ---
+<!DOCTYPE html>
 
-<div class="home">
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include header.html %}
 
-  <h1 class="page-heading">Posts</h1>
+    <div class="steps">
+      {% for step in site.data.steps %}
+        {{ step.title }}
+      {% endfor %}
+    </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+    {% include footer.html %}
+  </body>
+</html>
