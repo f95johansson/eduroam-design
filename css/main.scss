@@ -2,3 +2,16 @@
 ---
 
 @charset "utf-8";
+
+@import "reset";
+
+$black: #222;
+
+
+body {
+  
+}
+.top-bar {
+  background-color: $black; 
+}
+
