@@ -71,6 +71,8 @@ h1 {
   
   .versions {
     -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
     border: 0.1rem $black solid;
     border-radius: 0;
     height: 4rem;
