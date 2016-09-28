@@ -7,16 +7,82 @@
 
 $black: #222;
 
+/**
+ * Base
+ */
+
+html {
+  font-size: 62.5%;
+}
 
 body {
-  
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
 }
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/**
+ * Layout
+ */
+
 .top-bar {
+  color: white;
   background-color: $black; 
+  height: 3rem;
+  line-height: 3rem;
+  
+  img {
+    width: 1.2rem;
+    height: 2.2rem;
+    margin-left: 1.5rem;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
+.umu-logo {
+  
+  width: 100%;
+  
+  img {
+    height: 8rem;
+    width: 8rem;
+    display: block;
+    margin: 2rem auto 4rem auto;
+  }
+}
 
+#main-title {
+  width: 100%;
+  text-align: center;
+}
 
+.choose-os {
+  .choosen h3 {
+    display: inline;
+  }
+  
+  .versions {
+    -webkit-appearance: none; 
+    border: 0.1rem $black solid;
+    border-radius: 0;
+    height: 4rem;
+    
+    
+    &:after {
+      content: " ";
+      background-image: "/images/spinner.svg";
+      position: absolute;
+    }
+  }
+}
 
 
 .steps {
