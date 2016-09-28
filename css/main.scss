@@ -147,22 +147,24 @@ footer {
   margin: auto;
   left: 0;
   right: 0;
-  margin-top: 5rem;
   
   padding: 5rem;
 }
 
 .steps > h1 {
   font-size:200%;
+  margin-top: 5rem;
   margin-bottom: 5rem;
-  border-top: gray solid 1px;
-  padding-top: 5rem;
 }
 
 .step {
   box-sizing: border-box;
-  padding-bottom: 5rem; 
-  margin-bottom: 5rem;
+  padding-bottom: calc(5rem + 1em);
+  border-bottom: gray solid 1px;
+}
+
+.step:last-child {
+  border-bottom: none;
 }
 
 .step > div {
@@ -176,17 +178,27 @@ footer {
   border-right: 1px gray solid;
 }
 
-.steps > img {
+.steps > a > img {
   box-sizing: border-box;
   width: 9rem;
-  opacity: 0.7;
   margin: auto;
   left: 0;
   right: 0;
   display: block;
   position: relative;
-  transform:translateY(50%);
+  transform:translateY(-50%);
   padding-right: 2rem;
   padding-left: 2rem;
-  background: #fff;
+  background: $white;
+}
+
+
+
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
 }
