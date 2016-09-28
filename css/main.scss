@@ -20,16 +20,25 @@ $font-family: "Montserrat", Helvetica, Arial, sans-serif;
 
 html {
   font-size: 62.5%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
   font-family: $font-family;
   font-size: 1.6rem;
   background-color: $white;
+  
+  margin: 0 0 15rem; // footer height
 }
 
 h1 {
   font-size: 4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
@@ -42,6 +51,16 @@ a {
   color: $link-blue;
 }
 
+.center {
+  text-align: center;
+}
+
+#main-title {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0 3.5rem 0;
+}
+
 /**
  * Layout
  */
@@ -51,10 +70,11 @@ a {
   background-color: $black; 
   height: 3rem;
   line-height: 3rem;
+  font-size: 1.3rem;
   
   img {
     width: 1.2rem;
-    height: 2.2rem;
+    height: 1.8rem;
     margin-left: 1.5rem;
   }
   
@@ -72,18 +92,12 @@ a {
     height: 8rem;
     width: 8rem;
     display: block;
-    margin: 2rem auto 4rem auto;
+    margin: 2rem auto;
   }
-}
-
-#main-title {
-  width: 100%;
-  text-align: center;
 }
 
 .choose-os {
   text-align: center;
-  margin-top: 3.5rem;
   
   .choosen h3 {
     display: inline;
@@ -122,9 +136,12 @@ a {
 }
 
 footer {
+  background-color: $black;
   width: 100%;
   height: 15rem;
-  background-color: $black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   
   img {
     width: 8rem;
@@ -151,8 +168,7 @@ footer {
   padding: 5rem;
 }
 
-.steps > h1 {
-  font-size:200%;
+.steps > h2 {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }

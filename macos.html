@@ -1,37 +1,31 @@
 ---
+layout: default
 permalink: /macos
+
+pagetitle: Installera Eduroam
 ---
-<!DOCTYPE html>
 
-<html lang="sv">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    {% include header.html %}
+{% include navigation.html %}
 
-    <div class="steps">
-      {% for step in site.data.steps %}
-        
-        <h1 id="steg-{{ forloop.index }}">Steg {{ forloop.index }}. {{ step.title }}</h1>
-        <div class="step">
-          <div>
-            {% capture step-text %}{{ step.text }}{% endcapture %}
-            {{ step-text | markdownify }}
-          </div><div>
-            {% if step.images_path == "" %}
-              {{ step.images }}
-            {% else %}
-              Not implemented!
-            {% endif %}
-          </div>
-        </div>
-        {% if forloop.last == false %}
-        <a href="#steg-{{ forloop.index | plus: 1 }}"><img src="./images/big_next_arrow.svg"></a>
+<div class="steps">
+  {% for step in site.data.steps %}
+    
+    <h2 id="steg-{{ forloop.index }}">Steg {{ forloop.index }}. {{ step.title }}</h2>
+    <div class="step">
+      <div>
+        {% capture step-text %}{{ step.text }}{% endcapture %}
+        {{ step-text | markdownify }}
+      </div><div>
+        {% if step.images_path == "" %}
+          {{ step.images }}
+        {% else %}
+          Not implemented!
         {% endif %}
-      {% endfor %}
+      </div>
     </div>
+    {% if forloop.last == false %}
+    <a href="#steg-{{ forloop.index | plus: 1 }}"><img src="./images/big_next_arrow.svg"></a>
+    {% endif %}
+  {% endfor %}
+</div>
 
-    {% include footer.html %}
-  </body>
-</html>

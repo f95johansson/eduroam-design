@@ -1,0 +1,28 @@
+<nav class="choose-os">
+  
+  <div class="choosen">
+    
+    <h3>Vi tror du har: </h3>
+    <h3>Mac OSX</h3>
+    
+    <select class="versions">
+      <option>10.7-10.11</option>
+      <option>10.6</option>
+    </select>
+  </div>
+  
+  <div class="options">
+    <ul>
+      {% for link in site.data.nav %}
+        <li>
+        {% assign link_url = link.url | remove_first: "." %} <!-- remove relative link dot -->
+        {% if page.url == link_url %}
+          {{ link.title }}
+        {% else %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
