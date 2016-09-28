@@ -83,7 +83,7 @@ a {
 
 .choose-os {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3.5rem;
   
   .choosen h3 {
     display: inline;
@@ -103,7 +103,7 @@ a {
     font-family: $font-family;
     font-size: 1.6rem;
     
-    background-image: url("/images/spinner.svg");
+    background-image: url("../images/spinner.svg");
     background-repeat: no-repeat;
     background-position: 100% 48%;
     background-origin: padding-box;
@@ -111,7 +111,7 @@ a {
   }
   
   .options {
-    margin-top: 2rem;
+    margin-top: 3.5rem;
     
     li {
       padding: 0 2rem;
