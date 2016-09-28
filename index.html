@@ -12,7 +12,17 @@ layout: default
 
     <div class="steps">
       {% for step in site.data.steps %}
-        {{ step.title }}
+        
+        <h1>Steg {{ forloop.index }}. {{ step.title }}</h1>
+        <div class="step">
+          <div>
+            {{ step.text }}
+          </div>
+          <div>
+            {{ step.images }}
+          </div>
+        </div>
+        
       {% endfor %}
     </div>
 
