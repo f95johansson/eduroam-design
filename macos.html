@@ -16,8 +16,8 @@ pagetitle: Installera Eduroam
         {% capture step-text %}{{ step.text }}{% endcapture %}
         {{ step-text | markdownify }}
       </div><div>
-        {% if step.images_path == "" %}
-          {{ step.images }}
+        {% if step.images != "" %}
+          {% include {{ step.images }} %}
         {% else %}
           Not implemented!
         {% endif %}
