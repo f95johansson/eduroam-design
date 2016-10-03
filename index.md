@@ -4,17 +4,17 @@ pagetitle: eduroam
 ---
 
 {: class="center"}
-Installationen av eduroam kommer att ta några minuter och är enklast att genomföra
-på en plats där enheten är inom eduroams nätverk. Tänkt på att läsa igenom alla instruktioner
+Installationen av eduroam kommer att ta några minuter och är enklast att genomföra<br>
+på en plats där enheten är inom eduroams nätverk. Tänkt på att läsa igenom alla instruktioner<br>
 i ett steg innan du påbörjar steget.
 {: class="center"}
 
 <br>
+<br>
 
-### [Starta installationen](./macos)
+## [Starta installationen](./macos)
 {: class="center"}
 
-<br>
 <br>
 <br>
 <br>
