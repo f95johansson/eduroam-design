@@ -1,14 +1,40 @@
 - title: Ladda ner certifikat
   text: |
-        Gör just *detta* __nu!__
-        * steg 1
-        * steg 2
-        
-        och nu är du klar
-  image: "./images/umu-logo.svg"
-- title: Nåt annat
-  text: hello
-  html: downloadbuttons.html
-- title: Blubb!!!
-  text: hello
-  html: downloadbuttons.html
+        * Ladda ner de två certifikaten till höger.
+        * Öppna Hämtade Filer med Finder och hitta filerna
+        (deras namn syns till höger)
+  images: header.html
+- title: Installera certifikaten
+  text: |
+        * Dubbelklicka på filerna en i taget och välj System för båda certifikaten. 
+        * Detta kommer kräva inloggning för att godkännas. Välj “Lita alltid på” vid förfrågan.
+  images: downloadbuttons.html
+- title: Ladda ner rotcertifikatet
+  text: |
+        * Ladda ner rotcertifikatet till höger.
+        * Hitta filen i Hämtade filer med Finder.
+  images: downloadbuttons.html
+- title: Installera rotcertifikatet
+  text: |
+        * Dubbelklicka på filen och välj Inloggning.
+        * Detta kommer att kräva följande lösenord: [xxxxxxxxxxxxxxxxxx]
+        (Lösenordet är personligt och har genererats för denna installationssession)
+  images:
+- title: Konfigurera WiFi
+  text: |
+        * Konfigurera WiFi genom att gå till nätverksmenyn.
+        * Välj eduroam.
+  images:
+- title: Konfigurera av eduroam
+  text: |
+        * Välj EAP-TLS som läge.
+        * Välj ditt cas-id som identitet.
+        * Fyll inte i ett användarnamn.
+        * Välj Anslut och sedan Tillåt alltid vid förfrågan.
+  images:
+- title: Kontrollera anslutning
+  text: |
+        * Kontrollera att du är ansluten genom att öppna en webbläsare och hämta godtycklig hemsida.
+        * Kan du ansluta och få fram hemsidan så har installationen och anslutningen fungerat. Grattis!
+        * Kan du inte ansluta så dubbelkolla instruktionerna en gång till. Hittas inte felet så rådfråga problemsektionen nedan.
+  images:
