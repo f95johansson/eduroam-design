@@ -9,7 +9,7 @@ Installationen av eduroam kommer att ta några minuter och är enklast att genom
 
 <br>
 
-###[Starta installationen](./macos)
+[### Starta installationen](./macos)
 {: class="center"}
 
 <br>
@@ -27,4 +27,5 @@ eduroam är ett europeiskt samarbete bland universitet och högskolor som syftar
 Tjänsten använder certifikat som läggs in på din dator, mobiltelefon och/eller platta för att automatiskt logga in på trådlösa nätverk som är kopplade mot eduroam.
 {: class="center"}
 
+<br>
 <br>
