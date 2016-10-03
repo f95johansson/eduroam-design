@@ -16,10 +16,10 @@ pagetitle: Installera Eduroam
         {% capture step-text %}{{ step.text }}{% endcapture %}
         {{ step-text | markdownify }}
       </div><div>
-        {% if step.images != "" %}
-          {% include {{ step.images }} %}
+        {% if step.image != "" %}
+          <img src="{{ step.image }}">
         {% else %}
-          Not implemented!
+          {% include {{ step.images }} %}
         {% endif %}
       </div>
     </div>
