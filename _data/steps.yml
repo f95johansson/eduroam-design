@@ -2,7 +2,7 @@
   text: |
         * Ladda ner de två system-certifikaten till höger.
         * De kommer att sparas på din dator i mappen "Downloads" eller "Hämtade Filer".
-  images: header.html
+  images: downloadbuttons.html
 
 
 - title: Lägg till system-certifikat
@@ -13,14 +13,14 @@
         * Klicka på ___Lägg till___
         * Skriv in ditt lösenord till datorn och klicka på ___Ändra nyckelring___
         
-  images: downloadbuttons.html
+  images: ["./images/steps/system-open-files.png", "./images/steps/system-dialog.png"]
 
 
 
 - title: Ladda ner personligt login-certifikat
   text: |
         * Ladda ner ditt personliga login-certifikat till höger.
-  images: downloadbuttons.html
+  images: ["./images/steps/system-dialog.png"]
 
 
 
@@ -35,22 +35,25 @@
         
         Lösenordet är personligt och har genererats för denna installationssession.
           
-  images:
+  images: nofilefound.not_an_image
+
 - title: Konfigurera WiFi
   text: |
         * Konfigurera WiFi genom att gå till nätverksmenyn.
         * Välj eduroam.
-  images:
+  images: ["./images/umu-logo.svg"]
 - title: Konfigurera av eduroam
   text: |
         * Välj EAP-TLS som läge.
         * Välj ditt cas-id som identitet.
-        * Fyll inte i ett användarnamn.
-        * Välj Anslut och sedan Tillåt alltid vid förfrågan.
-  images:
+        * Fyll **inte** i ett användarnamn.
+        * Välj Anslut och sedan *"Tillåt alltid"* vid förfrågan.
+  images: ["./images/umu-logo.svg"]
+
 - title: Kontrollera anslutning
   text: |
         * Kontrollera att du är ansluten genom att öppna en webbläsare och hämta godtycklig hemsida.
         * Kan du ansluta och få fram hemsidan så har installationen och anslutningen fungerat. Grattis!
+        |
         * Kan du inte ansluta så dubbelkolla instruktionerna en gång till. Hittas inte felet så rådfråga problemsektionen nedan.
-  images:
+  images: ["./images/umu-logo.svg"]

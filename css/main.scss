@@ -73,6 +73,11 @@ strong {
  * Layout
  */
 
+.page {
+  max-width: 90rem;
+  margin: auto;
+}
+
 .top-bar {
   color: white;
   background-color: $black; 
@@ -163,6 +168,28 @@ footer {
   }
 }
 
+.download-buttons {
+  
+  a {
+    display: block;
+    background-color: $button-blue;
+    color: $white;
+    width: 21rem;
+    padding: 2rem 2rem 2rem 4rem;
+    margin: 1rem 0;
+    position: relative;
+    
+    &:before {
+      content: " ";
+      position: absolute;
+      left: 2rem;
+      width: 2rem;
+      height: 2rem;
+      background-image: url("../images/download-arrow.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
 
 .steps {
   box-sizing: border-box;
@@ -176,20 +203,25 @@ footer {
   padding: 5rem;
   
   li {
-    list-style: hebrew;
-    list-style-position: inside;
+    list-style: disc;
+    list-style-position: outside;
+    margin-top: 1.7rem;
   }
 }
 
 .steps > h2 {
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 .step {
   box-sizing: border-box;
   padding-bottom: calc(5rem + 1em);
   border-bottom: gray solid 1px;
+  
+  .instructions {
+    vertical-align: top;
+  }
 }
 
 .step:last-child {
@@ -199,7 +231,7 @@ footer {
 .step > div {
   box-sizing: border-box;
   width: 50%;
-  padding: 3rem;
+  padding: 0 3rem;
   display: inline-block;
 }
 
@@ -219,4 +251,8 @@ footer {
   padding-right: 2rem;
   padding-left: 2rem;
   background: $white;
+}
+
+.step-image {
+  width: 100%;
 }

@@ -12,14 +12,16 @@ pagetitle: Installera Eduroam
     
     <h2 id="steg-{{ forloop.index }}">Steg {{ forloop.index }}. {{ step.title }}</h2>
     <div class="step">
-      <div>
+      <div class="instructions">
         {% capture step-text %}{{ step.text }}{% endcapture %}
         {{ step-text | markdownify }}
-      </div><div>
-        {% if step.image != "" %}
-          <img src="{{ step.image }}">
+      </div><div class="display">
+        {% if step.images == null %}
+          {% include {{ step.html }} %}
         {% else %}
-          {% include {{ step.images }} %}
+          {% for image in step.images %}
+            <img class="step-image" src="{{ image }}">
+          {% endfor %}
         {% endif %}
       </div>
     </div>
