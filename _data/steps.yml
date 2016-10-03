@@ -3,38 +3,40 @@
         * Ladda ner de två certifikaten till höger.
         * Öppna Hämtade Filer med Finder och hitta filerna
         (deras namn syns till höger)
-  images: header.html
+  html: downloadbuttons.html
 - title: Installera certifikaten
   text: |
-        * Dubbelklicka på filerna en i taget och välj System för båda certifikaten. 
-        * Detta kommer kräva inloggning för att godkännas. Välj “Lita alltid på” vid förfrågan.
-  images: downloadbuttons.html
+        * Dubbelklicka på filerna en i taget
+        * välj **System** för båda certifikaten. 
+        * Detta kommer kräva inloggning på din dator för att godkännas.
+  images: ["./images/steps/system-open-files.png", "./images/steps/system-dialog.png"]
 - title: Ladda ner rotcertifikatet
   text: |
-        * Ladda ner rotcertifikatet till höger.
+        * Ladda ner inloggningscertifikatet till höger.
         * Hitta filen i Hämtade filer med Finder.
-  images: downloadbuttons.html
+  images: ["./images/steps/system-dialog.png"]
 - title: Installera rotcertifikatet
   text: |
         * Dubbelklicka på filen och välj Inloggning.
         * Detta kommer att kräva följande lösenord: [xxxxxxxxxxxxxxxxxx]
         (Lösenordet är personligt och har genererats för denna installationssession)
-  images:
+  images: ["./images/umu-logo.svg"]
 - title: Konfigurera WiFi
   text: |
         * Konfigurera WiFi genom att gå till nätverksmenyn.
         * Välj eduroam.
-  images:
+  images: ["./images/umu-logo.svg"]
 - title: Konfigurera av eduroam
   text: |
         * Välj EAP-TLS som läge.
         * Välj ditt cas-id som identitet.
         * Fyll inte i ett användarnamn.
         * Välj Anslut och sedan Tillåt alltid vid förfrågan.
-  images:
+  images: ["./images/umu-logo.svg"]
 - title: Kontrollera anslutning
   text: |
         * Kontrollera att du är ansluten genom att öppna en webbläsare och hämta godtycklig hemsida.
         * Kan du ansluta och få fram hemsidan så har installationen och anslutningen fungerat. Grattis!
         * Kan du inte ansluta så dubbelkolla instruktionerna en gång till. Hittas inte felet så rådfråga problemsektionen nedan.
-  images:
+  images: ["./images/umu-logo.svg"]
+
