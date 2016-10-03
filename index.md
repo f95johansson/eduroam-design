@@ -3,7 +3,6 @@ layout: default
 pagetitle: eduroam
 ---
 
-### Installera eduroam
 {: class="center"}
 Installationen av eduroam kommer att ta några minuter och är enklast att genomföra på en plats där enheten är inom eduroams nätverk. Tänkt på att läsa igenom alla instruktioner i ett steg innan du påbörjar steget.
 {: class="center"}
