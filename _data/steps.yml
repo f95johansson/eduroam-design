@@ -1,24 +1,40 @@
-- title: Ladda ner certifikat
+- title: Ladda ner system-certifikat
   text: |
-        * Ladda ner de två certifikaten till höger.
-        * Öppna Hämtade Filer med Finder och hitta filerna
-        (deras namn syns till höger)
+        * Ladda ner de två system-certifikaten till höger.
+        * De kommer att sparas på din dator i mappen "Downloads" eller "Hämtade Filer".
   images: header.html
-- title: Installera certifikaten
+
+
+- title: Lägg till system-certifikat
   text: |
-        * Dubbelklicka på filerna en i taget och välj System för båda certifikaten. 
-        * Detta kommer kräva inloggning för att godkännas. Välj “Lita alltid på” vid förfrågan.
+        Dubbelklicka på båda certifikat-filerna en och en. I varje dialogruta som kommer upp gör du såhär:
+        
+        * Se till att ___System___ är valt i menyn
+        * Klicka på ___Lägg till___
+        * Skriv in ditt lösenord till datorn och klicka på ___Ändra nyckelring___
+        
   images: downloadbuttons.html
-- title: Ladda ner rotcertifikatet
+
+
+
+- title: Ladda ner personligt login-certifikat
   text: |
-        * Ladda ner rotcertifikatet till höger.
-        * Hitta filen i Hämtade filer med Finder.
+        * Ladda ner ditt personliga login-certifikat till höger.
   images: downloadbuttons.html
-- title: Installera rotcertifikatet
+
+
+
+- title: Installera login-certifikat
   text: |
-        * Dubbelklicka på filen och välj Inloggning.
-        * Detta kommer att kräva följande lösenord: [xxxxxxxxxxxxxxxxxx]
-        (Lösenordet är personligt och har genererats för denna installationssession)
+        Dubbelklicka nu på det personliga certifikatet och gör följande:
+        
+        * Se till att ___Inloggning___ är vald
+        * Klicka på ___Lägg till___
+        * Skriv in ditt lösenord till datorn och klicka på ___Ändra nyckelring___
+        * Skriv in följande lösenord till certifikatet: __xxxxxxxxxxxxxxxxxx__
+        
+        Lösenordet är personligt och har genererats för denna installationssession.
+          
   images:
 - title: Konfigurera WiFi
   text: |
