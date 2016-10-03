@@ -1,8 +1,8 @@
 - title: Ladda ner certifikat
   text: |
         Gör just *detta* __nu!__
-        - steg 1
-        - steg 2
+        * steg 1
+        * steg 2
         
         och nu är du klar
   images: blubb
