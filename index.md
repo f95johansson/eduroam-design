@@ -25,7 +25,7 @@ Läs mer på eduroams officiella svenska hemsida: [eduroam.se](www.eduroam.se)
 {: class="center startPageinfo"}
 <br>
 
-### Varför certifikat och hur fungerar de?
+### Varför certifikat?
 {: class="center"}
 <br>
 
