@@ -13,6 +13,9 @@ Installationen av eduroam kommer att ta några minuter och är enklast att genom
 {: class="center"}
 
 <br>
+<br>
+<br>
+<br>
 
 #### Vad är eduroam?
 {: class="center"}
