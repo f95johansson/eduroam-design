@@ -9,7 +9,7 @@ Installationen av eduroam kommer att ta några minuter och är enklast att genom
 
 <br>
 
-[### Starta installationen](./macos)
+### [Starta installationen](./macos)
 {: class="center"}
 
 <br>
