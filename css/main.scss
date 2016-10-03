@@ -28,6 +28,7 @@ body {
   font-family: $font-family;
   font-size: 1.6rem;
   background-color: $white;
+  line-height: 1.75;
   
   margin: 0 0 15rem; // footer height
 }
@@ -57,6 +58,10 @@ em {
 
 strong {
   font-weight: bold;
+  border-radius: .5rem;
+  padding: .4rem .5rem .4rem .5rem;
+  border: black solid 1px;
+  margin:.3rem;
 }
 
 .center {
@@ -75,6 +80,11 @@ strong {
 
 .page {
   max-width: 90rem;
+  margin: auto;
+}
+
+.startPageinfo {
+  max-width: 70rem;
   margin: auto;
 }
 
@@ -202,25 +212,43 @@ footer {
   
   padding: 5rem;
   
+  h2 {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  
   li {
     list-style: disc;
     list-style-position: outside;
-    margin-top: 1.7rem;
+    margin-bottom: 2rem;
+    margin-left:3rem;
+    padding-left:1rem;
+    list-style-type: circle;
+  }
+  
+  p {
+      margin-bottom: 4rem;
   }
 }
 
-.steps > h2 {
-  margin-top: 5rem;
-  margin-bottom: 1rem;
-}
-
 .step {
+  position: relative;
   box-sizing: border-box;
   padding-bottom: calc(5rem + 1em);
-  border-bottom: gray solid 1px;
+  border-bottom: $line-gray solid 1px;
   
   .instructions {
     vertical-align: top;
+  }
+  
+  ::before {
+    width: .2rem;
+    background: $line-gray;
+    left: calc(50% + -.1rem);
+    top: 0;
+    height: calc(100% + -5rem + -1em);
+    position: absolute;
+    content: "";
   }
 }
 
@@ -231,12 +259,9 @@ footer {
 .step > div {
   box-sizing: border-box;
   width: 50%;
+  height: 100%;
   padding: 0 3rem;
   display: inline-block;
-}
-
-.step > div:first-child {
-  border-right: 1px gray solid;
 }
 
 .steps > a > img {
