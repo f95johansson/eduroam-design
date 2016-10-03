@@ -73,6 +73,11 @@ strong {
  * Layout
  */
 
+.page {
+  max-width: 90rem;
+  margin: auto;
+}
+
 .top-bar {
   color: white;
   background-color: $black; 
