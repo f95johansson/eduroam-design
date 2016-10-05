@@ -55,4 +55,4 @@
         * Kontrollera att du är ansluten genom att öppna en webbläsare och hämta godtycklig hemsida.
         * Kan du ansluta och få fram hemsidan så har installationen och anslutningen fungerat. Grattis!
         * Kan du inte ansluta så dubbelkolla instruktionerna en gång till. Hittas inte felet så rådfråga problemsektionen nedan.
-  images: ["./images/steps/victory.jpg"]
+  images: ["./images/steps/checkmark.svg"]

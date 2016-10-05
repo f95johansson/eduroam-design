@@ -200,6 +200,9 @@ footer {
       top: 50%;
       transform: translateY(-50%);
       background-repeat: no-repeat;
+      background-color: transparent;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
@@ -241,6 +244,33 @@ footer {
   
   .instructions {
     vertical-align: top;
+    
+    margin-bottom: 4rem; // .help height
+  }
+  
+  .help {
+    border: .1rem solid $black;
+    height: 4rem;
+    line-height: 4rem;
+    width: calc(50% - 6rem);
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0 1.6rem;
+    bottom: 6.6rem;
+    left: 3rem;
+    cursor: pointer;
+    
+    &:after {
+      content: " ";
+      background-image: url('../images/small-arrow.svg');
+      background-repeat: no-repeat;
+      width: 1.6rem;
+      height: 1.6rem;
+      position: absolute;
+      right: 1.6rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
   
   ::before {
