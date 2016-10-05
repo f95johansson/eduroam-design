@@ -197,6 +197,9 @@ footer {
       height: 2rem;
       background-image: url("../images/download-arrow.svg");
       background-repeat: no-repeat;
+      background-color: transparent;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
@@ -250,7 +253,7 @@ footer {
     width: calc(50% - 6rem);
     position: absolute;
     box-sizing: border-box;
-    padding: 0 2rem;
+    padding: 0 1.6rem;
     bottom: 6.6rem;
     left: 3rem;
     cursor: pointer;
@@ -259,10 +262,10 @@ footer {
       content: " ";
       background-image: url('../images/small-arrow.svg');
       background-repeat: no-repeat;
-      width: 2rem;
-      height: 2rem;
+      width: 1.6rem;
+      height: 1.6rem;
       position: absolute;
-      right: 1rem;
+      right: 1.6rem;
       top: 50%;
       transform: translateY(-50%);
     }
