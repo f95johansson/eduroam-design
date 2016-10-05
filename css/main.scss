@@ -185,17 +185,20 @@ footer {
     background-color: $button-blue;
     color: $white;
     width: 21rem;
-    padding: 2rem 2rem 2rem 4rem;
-    margin: 1rem 0;
+    padding: 1.2rem 2rem 1.2rem 5.5rem;
+    margin: 2.2rem 0;
     position: relative;
     
     &:before {
       content: " ";
       position: absolute;
-      left: 2rem;
+      left: 2.5rem;
       width: 2rem;
       height: 2rem;
       background-image: url("../images/download-arrow.svg");
+      background-color: transparent;
+      top: 50%;
+      transform: translateY(-50%);
       background-repeat: no-repeat;
     }
   }
