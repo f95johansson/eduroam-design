@@ -3,8 +3,6 @@
 
 @charset "utf-8";
 
-@import "reset";
-
 $black: #222;
 $white: #fff;
 $link-blue: #006699;
@@ -13,6 +11,9 @@ $beige: #F3F3EC;
 $line-gray: #DDDDDD;
 
 $font-family: "Montserrat", Helvetica, Arial, sans-serif;
+
+@import "reset";
+@import "progress";
 
 /**
  * Base
@@ -188,6 +189,7 @@ footer {
     padding: 2rem 2rem 2rem 4rem;
     margin: 1rem 0;
     position: relative;
+    transition: background-color .3s;
     
     &:before {
       content: " ";
@@ -200,6 +202,10 @@ footer {
       background-color: transparent;
       top: 50%;
       transform: translateY(-50%);
+    }
+    
+    &:hover {
+      background-color: lighten($button-blue, 10%);
     }
   }
 }
