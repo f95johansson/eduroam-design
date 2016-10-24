@@ -19,14 +19,14 @@
 
 - title: Ladda ner personligt login-certifikat
   text: |
-        * Ladda ner ditt personliga login-certifikat till höger.
+        * Ladda nu ner ditt personliga login-certifikat här till höger.
   html: downloadlogin.html
 
 
 
-- title: Installera login-certifikat
+- title: Lägg till login-certifikat
   text: |
-        Dubbelklicka nu på det personliga certifikatet och gör följande:
+        Dubbelklicka på den personliga certifikat-filen och gör såhär:
         
         * Se till att ___Inloggning___ är vald
         * Klicka på ___Lägg till___
@@ -39,15 +39,15 @@
 
 - title: Konfigurera WiFi
   text: |
-        * Konfigurera WiFi genom att gå till nätverksmenyn.
-        * Välj eduroam.
+        * Öppna datorns nätverksmeny.
+        * Klicka på  ___eduroam___
   images: ["./images/steps/choose-eduroam.png"]
-- title: Konfigurera av eduroam
+- title: Inställningar för eduroam
   text: |
-        * Välj EAP-TLS som läge.
-        * Välj ditt cas-id som identitet.
+        * Välj ___EAP-TLS___ som "läge".
+        * Välj ___abcd1234@umu.se___ som "identitet".
         * Fyll **inte** i ett användarnamn.
-        * Välj Anslut och sedan *"Tillåt alltid"* vid förfrågan.
+        * Klicka på ___Anslut___ och sedan ___Tillåt alltid___ vid förfrågan.
   images: ["./images/steps/eduroam-settings.png", "./images/steps/controll-certificate.png"]
 
 - title: Kontrollera anslutning
