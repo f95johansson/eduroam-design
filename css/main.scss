@@ -59,14 +59,16 @@ em {
 
 strong {
   font-weight: bold;
-}
-
-strong > em {
   border-radius: .5rem;
   padding: .4rem .5rem .4rem .5rem;
   border: black solid 1px;
   margin:.3rem;
   white-space:nowrap;
+}
+
+:not(strong) > em {
+  text-decoration:underline;
+  font-weight:bold;
 }
 
 .center {
