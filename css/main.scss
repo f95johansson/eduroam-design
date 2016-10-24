@@ -57,12 +57,16 @@ em {
   font-style: italic;
 }
 
-strong {
+strong > em {
   font-weight: bold;
+}
+
+strong > em {
   border-radius: .5rem;
   padding: .4rem .5rem .4rem .5rem;
   border: black solid 1px;
   margin:.3rem;
+  white-space:nowrap;
 }
 
 .center {
@@ -279,7 +283,7 @@ footer {
     }
   }
   
-  ::before {
+  > *::before {
     width: .2rem;
     background: $line-gray;
     left: calc(50% + -.1rem);
